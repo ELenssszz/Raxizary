@@ -1,0 +1,116 @@
+#Vero-list{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+padding:40px;
+
+}
+
+/* ===========================
+   Tablet & HP
+=========================== */
+
+@media screen and (max-width:768px){
+
+#Vero-list{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+padding:20px;
+
+}
+
+.card img{
+
+height:220px;
+
+}
+
+@media screen and (max-width:480px){
+
+.card h2{
+
+font-size:18px;
+
+}
+
+.card p{
+
+font-size:14px;
+
+}
+
+.card span{
+
+font-size:13px;
+
+}
+
+}
+
+
+}
+
+.card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+}
+
+.card h2{
+
+padding:15px;
+
+}
+
+.card p{
+
+padding:0 15px;
+
+color:#666;
+
+}
+
+.card span{
+
+display:block;
+
+padding:15px;
+
+font-weight:bold;
+
+color:#1565C0;
+
+}

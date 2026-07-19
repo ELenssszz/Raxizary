@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Leaderboard Petarung</title>
+
+<link rel="stylesheet" href="rank.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🏆 Leaderboard Para Petarung 🏆</h1>
+
+<p>Persaingan Prestasi Antar Petarung</p>
+
+</header>
+
+<section class="ranking">
+
+
+
+<div class="rank gold" onclick="bukaProfil(0)">
+
+    <div class="nomor">🥇</div>
+
+    <div class="info">
+
+    <h2>zakira</h2>
+
+    <p>9650 Point</p>
+
+    </div>
+    
+</div>
+
+
+
+<div class="rank silver"  onclick="bukaProfil(1)">
+
+<div class="nomor">🥈</div>
+
+<div class="info">
+
+<h2>raysha</h2>
+
+<p>9320 Point</p>
+
+</div>
+
+</div>
+
+
+
+<div class="rank bronze"  onclick="bukaProfil(2)">
+
+<div class="nomor">🥉</div>
+
+<div class="info">
+
+<h2>tiwi</h2>
+
+<p>9015 Point</p>
+
+</div>
+
+</div>
+
+
+
+<div class="rank" onclick="bukaProfil(3)">
+
+<div class="nomor">4</div>
+
+<div class="info">
+
+<h2>yura</h2>
+
+<p>8720 Point</p>
+
+</div>
+
+</div>
+
+
+
+<div class="rank gold" onclick="bukaProfil(4)">
+
+    <div class="nomor">🥇</div>
+
+    <div class="info">
+
+        <h2>Rank 2</h2>
+
+        <p>9950Point</p>
+
+    </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<div id="popup" class="popup">
+
+    <div class="popup-box">
+
+        <span class="close">&times;</span>
+
+        <img id="foto" onclick="lihatGambar()">
+
+        <h2 id="julukan"></h2>
+
+        <p><b>Nama :</b> <span id="nama"></span></p>
+
+        <p><b>Lahir :</b> <span id="lahir"></span></p>
+
+        <p><b>Umur :</b> <span id="umur"></span></p>
+
+        <p><b>Kemampuan :</b> <span id="kemampuan"></span></p>
+
+        <p><b>Point :</b> <span id="point"></span></p>
+
+    </div>
+
+</div>
+
+
+
+<div id="imagePopup" class="image-popup">
+    <span class="close-image" onclick="tutupGambar()">&times;</span>
+
+    <img id="fullImage" class="full-image">
+</div>
+
+
+
+<script src="rank.js"></script>
+</body>
+
+</html>
